@@ -4,11 +4,21 @@ import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
 
+function Header() {
+  return <h1>Welcome Anshu</h1>
+}
+function Button(){
+  return <button>Click Me</button>
+}
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <h>Hello World!</h>
+    <div>
+      <Header />
+      <h1>Vite + React</h1>
+      <Button />
+    </div>
   )
 }
 
