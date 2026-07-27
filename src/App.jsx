@@ -12,7 +12,7 @@ function App() {
 
   return (
     <div className="App">
-      <Welcome name="Anshu" />
+      <Welcome name="Anshu" age="25" location="India"/>
       <h1>Welcome to React App</h1>
       <Form />
       <CandidateProfile />
