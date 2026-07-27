@@ -5,6 +5,7 @@ import heroImg from './assets/hero.png'
 import './App.css'
 import { Header, Home} from './Header'
 import { Form } from './StyledForm'
+import { CandidateProfile } from './CandidateProfile'
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
     <div className="App">
       <h1>Welcome to React App</h1>
       <Form />
+      <CandidateProfile />
     </div>
   )
 }
