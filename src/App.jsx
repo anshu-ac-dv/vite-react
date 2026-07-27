@@ -4,25 +4,14 @@ import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
 import { Header, Home} from './Header'
+import { Form } from './StyledForm'
 
-
-function Button(){
-  return <button>Click Me</button>
-}
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <div className="App">
-      <Header />
-      <Home />
-      <h1>Vite + React</h1>
-      <div className="card">
-        <Button />
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-      </div>
+      <h1>Welcome to React App</h1>
+      <Form />
     </div>
   )
 }
