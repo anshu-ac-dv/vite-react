@@ -14,10 +14,10 @@ function App() {
   return (
     <div className="App">
       <Greeting name="Anshu" messages="Welcome to React App"/>
-      {/* <Welcome name="Anshu" age="25" location="India"/>
+      <Welcome name="Anshu" age="25" location="India"/>
       <h1>Welcome to React App</h1>
       <Form />
-      <CandidateProfile /> */}
+      <CandidateProfile />
     </div>
   )
 }
