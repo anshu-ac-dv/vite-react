@@ -8,11 +8,13 @@ import { Form } from './StyledForm'
 import { Welcome } from './Welcome'
 import { CandidateProfile } from './CandidateProfile'
 import { Greeting } from './Gretting'
+import { CardWrapper } from './CardWrapper'
 
 function App() {
 
   return (
     <div className="App">
+      <CardWrapper title="Card Wrapper Component"/>
       <Greeting name="Anshu" messages="Welcome to React App"/>
       <Welcome name="Anshu" age="25" location="India"/>
       <h1>Welcome to React App</h1>
