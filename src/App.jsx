@@ -16,7 +16,7 @@ function App() {
   return (
     <div className="App">
       <UserDetails name="Anshu" isOnline={true} />
-      <UserDetails name="John" isOnline={false} />
+      <UserDetails name="John" isOnline={false} hideOffline={false} />
       <CardWrapper title="Card Wrapper Component"/>
       <Greeting name="Anshu" messages="Welcome to React App"/>
       <Welcome name="Anshu" age="25" location="India"/>

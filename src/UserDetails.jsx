@@ -1,18 +1,12 @@
-export const UserDetails = ({ name, isOnline}) => {
-    if(isOnline){
-        return(
-            <div>
-                <h2>{name}</h2>
-                <span style={{color: "green"}}>Online</span>
-                <p>Avalible for chat</p>
-            </div>
-        )
+export const UserDetails = ({ name, isOnline, hideOffline }) => {
+    if (hideOffline && !isOnline) {
+        return null;
     }
-    return(
+    return (
         <div>
             <h2>{name}</h2>
-            <span style={{color: "red"}}>Offline</span>
-            <p>Not Avalible for chat</p>
+            <p> Status : {isOnline ? 'Online' : 'Offline'}</p>
+            <p>{isOnline  ? <button>Send Message</button> : <h3>Check back later</h3>}</p>
         </div>
     )
 }
