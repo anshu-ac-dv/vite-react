@@ -15,12 +15,7 @@ export const ProductList = () => {
             name: 'Product 3',
             price: 30.99,
             description: 'This is product 3',
-        }, {
-            id: 4,
-            name: 'Product 4',
-            price: 40.99,
-            description: 'This is product 4',
-        }
+        },
     ]; // Example product data
 
     const ProductElements = products.map((product) => (
