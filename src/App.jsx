@@ -10,11 +10,13 @@ import { CandidateProfile } from './CandidateProfile'
 import { Greeting } from './Gretting'
 import { CardWrapper } from './CardWrapper'
 import { UserDetails } from './UserDetails'
+import { ProductList } from './ProductList'
 
 function App() {
 
   return (
     <div className="App">
+      < ProductList />
       <UserDetails name="Anshu" isOnline={true} />
       <UserDetails name="John" isOnline={false} hideOffline={false} />
       <CardWrapper title="Card Wrapper Component"/>
