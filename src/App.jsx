@@ -11,11 +11,13 @@ import { Greeting } from './Gretting'
 import { CardWrapper } from './CardWrapper'
 import { UserDetails } from './UserDetails'
 import { ProductList } from './ProductList'
+import { NameList } from './NameList'
 
 function App() {
 
   return (
     <div className="App">
+      <NameList />
       < ProductList />
       <UserDetails name="Anshu" isOnline={true} />
       <UserDetails name="John" isOnline={false} hideOffline={false} />
