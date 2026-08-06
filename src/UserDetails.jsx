@@ -6,7 +6,7 @@ export const UserDetails = ({ name, isOnline, hideOffline }) => {
         <div>
             <h2>{name}</h2>
             <p> Status : {isOnline ? 'Online' : 'Offline'}</p>
-            <p>{isOnline  ? <button>Send Message</button> : <h3>Check back later</h3>}</p>
+            <p>{isOnline  ? <button>Send Message</button> : <button>You are offline</button>}</p>
         </div>
     )
 }
