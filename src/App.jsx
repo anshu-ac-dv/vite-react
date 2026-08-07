@@ -12,13 +12,25 @@ import { CardWrapper } from './CardWrapper'
 import { UserDetails } from './UserDetails'
 import { ProductList } from './ProductList'
 import { NameList } from './NameList'
+import { Alert } from './Alert'
+import { UserCard } from './UserCard'
+import { UserInnfo } from './UserInfo'
+
 
 function App() {
 
   return (
     <div className="App">
+      <Alert type="success">
+        Your account has been created successfully!
+      </Alert>
+      <Alert type="error">
+        Something went wrong. Please try again later.
+      </Alert>
       <NameList />
       < ProductList />
+      <UserCard name="Anshu" age="25" location="India" />
+      <UserInnfo name="Anshu" age="25" location="India" />
       <UserDetails name="Anshu" isOnline={true} />
       <UserDetails name="John" isOnline={false} hideOffline={false} />
       <CardWrapper title="Card Wrapper Component"/>
